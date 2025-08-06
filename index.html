@@ -8,6 +8,29 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    
+    <h1>Library</h1>
+    <form id="library-form">
+        <div>
+            <label for="bookName" >Name Of Book : </label>
+            <input type="text" placeholder="Enter the book name" name="bookName" id="bookName">
+        </div>
+        <div>
+            <label for="authorName">Name Of Author : </label>
+            <input type="text" placeholder="Author's Name" name="authorName" id="authorName">
+        </div>
+        <div>
+            <label for="pages">No. Of Pages</label>
+            <input type="number" name="pages" id="pages">
+        </div>
+        <fieldset>
+            <legend>Done Reading : </legend>
+            <label for="read-yes">Yes</label>
+            <input type="radio" id="read-yes" name="read" value="yes">
+            <label for="read-no">No</label>
+            <input type="radio" id="read-no" name="read" value="No">
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="bookCollection"></div>
 </body>
 </html>
