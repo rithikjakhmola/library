@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="script.js" defer></script>
-    <link href="styles.css" rel="stylesheet">
-</head>
-<body>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
     <h1>Library</h1>
-    <form id="library-form">
-        <div>
-            <label for="bookName" >Name Of Book : </label>
-            <input type="text" placeholder="Enter the book name" name="bookName" id="bookName">
-        </div>
-        <div>
+    <div id="form-container">
+      <form id="library-form">
+        <div id="inside-form">
+          <div class="info">
+            <label for="bookName">Name Of Book : </label>
+            <input
+              type="text"
+              placeholder="Enter the book name"
+              name="bookName"
+              id="bookName"
+            />
+          </div>
+          <div class="info">
             <label for="authorName">Name Of Author : </label>
-            <input type="text" placeholder="Author's Name" name="authorName" id="authorName">
-        </div>
-        <div>
-            <label for="pages">No. Of Pages</label>
-            <input type="number" name="pages" id="pages">
-        </div>
-        <fieldset>
-            <legend>Done Reading : </legend>
+            <input
+              type="text"
+              placeholder="Author's Name"
+              name="authorName"
+              id="authorName"
+            />
+          </div>
+          <div class="info">
+            <label for="pages">No. Of Pages : </label>
+            <input type="number" name="pages" id="pages" />
+          </div>
+          <div>
+            <label>Done Reading : </label>
             <label for="read-yes">Yes</label>
-            <input type="radio" id="read-yes" name="read" value="yes">
+            <input type="radio" id="read-yes" name="read" value="yes" />
             <label for="read-no">No</label>
-            <input type="radio" id="read-no" name="read" value="No">
-        </fieldset>
+            <input type="radio" id="read-no" name="read" value="No" />
+          </div>
+        </div>
         <button type="submit">Submit</button>
-    </form>
+      </form>
+    </div>
     <div id="bookCollection"></div>
-</body>
+  </body>
 </html>

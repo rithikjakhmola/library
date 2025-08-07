@@ -1,0 +1,61 @@
+/* styling for the form starts here */
+body {
+    font-family: sans-serif;
+    text-align: center ;
+    
+}
+h1{
+    font-size: 40px ;
+}
+form{
+    height : 130px ; 
+    border : 2px solid black ;
+    width : max(700px , 50vw); 
+    padding : 10px ; 
+    margin: auto ; 
+    border-radius : 5px ; 
+    display : flex ; 
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: center;
+}
+#inside-form {
+    width : 45% ; 
+    height: 75%;
+    display: flex ; 
+    flex-direction : column ; 
+    justify-content: space-around;
+}
+.info {
+    display: flex ; 
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+button {
+    width : 90px ; 
+    border: 2px solid black ; 
+    border-radius : 5px ; 
+    background-color: rgb(58, 58, 58);
+    color : white ; 
+}
+
+/* styling for the form ends here  */
+/* styling for books added in the library starts here */
+.newBook, .unreadBook{
+    margin : 10px auto ; 
+    border : 2px solid black ; 
+    width : 50% ; 
+    border-radius : 5px ; 
+    background-color: papayawhip;
+    color  : black ; 
+    padding : 5px ;
+    display : flex ; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100px ; 
+}
+.unreadBook {
+    background-color: rgb(190, 124, 124);
+    color :black ; 
+}
