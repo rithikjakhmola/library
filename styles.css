@@ -45,7 +45,8 @@ button {
 .newBook, .unreadBook{
     margin : 10px auto ; 
     border : 2px solid black ; 
-    width : 50% ; 
+    width : 80% ; 
+    font-size: large;
     border-radius : 5px ; 
     background-color: papayawhip;
     color  : black ; 
@@ -56,6 +57,17 @@ button {
     height: 100px ; 
 }
 .unreadBook {
-    background-color: rgb(190, 124, 124);
+    background-color:#FFB74D ;
     color :black ; 
+}
+.largestContainer{
+    display: flex; 
+    flex-direction : row ; 
+    width: max(600px , 50vw);
+    margin : 10px auto 0px auto ; 
+}
+.deletebutton {
+    margin : auto ; 
+    height : 50px; 
+    font-size : large ; 
 }
